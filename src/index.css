@@ -421,9 +421,10 @@ button.button {
 .microsite .microsite_page .nftdisplay .nftdisplay_container .projectname {
   font-size: 28px;
 }
-.microsite .microsite_page .nftdisplay {
+/* .microsite .microsite_page .nftdisplay {
   width: 92%;
-}
+  border:1px solid white;
+} */
 
 .microsite .microsite_page .nftdisplay .nftdisplay_container .nftname {
   font-size: 32px;
@@ -432,10 +433,12 @@ button.button {
   font-size: 24px;
 }
 .microsite .microsite_page .nftdisplay .nftdisplay_container .nftdisplay_nft {
-  width: 310px;
+  width: 340px;
+  transform: translateY(10px);
 }
 .microsite .utilities .utilities_container {
-  width: 95%}
+  width: 95%;}
+
 .microsite .utilities .utilities_container .utility {
   padding: 10px;
   width: auto;
