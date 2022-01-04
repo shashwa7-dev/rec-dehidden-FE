@@ -354,6 +354,7 @@ button.button {
 }
 .microsite .microsite_page .nftdisplay {
   height: auto;
+  margin-top:29px;
   min-width: 100vw;
   /* margin: 100px auto 30px;
   padding-top: 20px;
