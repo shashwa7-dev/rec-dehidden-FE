@@ -355,17 +355,17 @@ button.button {
 .microsite .microsite_page .nftdisplay {
   height: auto;
   min-width: 100vw;
-  margin: 100px auto 30px;
+  /* margin: 100px auto 30px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
   box-shadow: none;
-  background: linear-gradient(170deg, rgb(0, 0, 0) 0%, rgba(182, 0, 0, 0)100%); 
+  background: linear-gradient(170deg, rgba(0, 0, 0, 0.287) 0%, rgba(182, 0, 0, 0)100%); 
 }
 .microsite .microsite_page .nftdisplay:before {
   inset: 0;
   position: absolute;
   content: "";
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.26);
   z-index: -1;
 }
 .microsite .microsite_page .nftdisplay .nftdisplay_container {
@@ -392,11 +392,12 @@ button.button {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, .45);
+  background-color: rgba(15, 15, 15, 0.685);
   padding: 10px;
   margin: 15px auto;
   border-radius: 24px;
   cursor: pointer;
+  box-shadow: 0 0 10px #7978789a;
 }
 .microsite .utilities .utilities_container .utility .utility_text {
   margin: 10px 0;
