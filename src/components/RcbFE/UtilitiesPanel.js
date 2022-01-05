@@ -7,7 +7,7 @@ import saturn from '../../static/media/saturn.png'
 
 function RenderUtilityItem({data}){
 
-   if(data.id == 2){
+   if(data.id === 2){
      return(
         <a key={data.id} onClick={(e) => alert('You must download our AR app!')}>
         <div className="rcb_utility">
@@ -48,7 +48,7 @@ function UtilitiesPanel() {
     img_src:eiffil,
     head:'View on IPFS',
     sub_head:'Your NFT data stored safely forever',
-    url:'#'
+    url:''
    },
    {
     id:2,
@@ -62,14 +62,14 @@ function UtilitiesPanel() {
     img_src: teddy ,
     head:'Download 3D Model',
     sub_head:'Instantly get acccess to the blend file',
-    url:'https://github.com/DehiddenTeam/phygital-frontend/raw/master/src/static/media/loveabot.jpeg'
+    url:''
    },
    {
     id: 4,
     img_src: saturn,
     head:'Join the community',
     sub_head:'Unlock Community access with your NFT',
-    url:'https://discord.com/invite/QKt5Qr2PhA'
+    url:''
  }
 ]
   return (
