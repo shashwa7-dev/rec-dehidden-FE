@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../static/media/logo.svg' //img import
-
+import config from "./config";
 
 //handleCopy Mehtod
 const handleCopy = (e, link) => {
@@ -37,7 +37,7 @@ function MicroSiteNav({plyr}) {
           <button className="rcb_button rcb_primary" onClick={(e) =>
               handleCopy(
                 e,
-                `https://verify.dehidden.com/rcb/${plyr.plyr_name_id}`
+                `${config.baseUrl}/rcb/${plyr.plyr_name_id}`
               )
             }>
           <span className='btn-txt'><i className="fa fa-copy"></i>Copy</span>
@@ -46,7 +46,7 @@ function MicroSiteNav({plyr}) {
         <div
           className="rcb_mobile_copy rcb_primary"
           onClick={(e) =>
-            handleCopy(e, `https://verify.dehidden.com/rcb/${plyr.plyr_name_id}`)
+            handleCopy(e, `${config.baseUrl}/rcb/${plyr.plyr_name_id}`)
           }> <i className="fa fa-copy"></i> </div>
         <div className="rcb_copytext_mobile">Copied to Clipboard!</div>
       </div>
