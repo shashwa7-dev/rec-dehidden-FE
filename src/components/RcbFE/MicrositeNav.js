@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../static/media/logo.svg' //img import
-import config from "./config";
+import config from './config/index'
 
 //handleCopy Mehtod
 const handleCopy = (e, link) => {
