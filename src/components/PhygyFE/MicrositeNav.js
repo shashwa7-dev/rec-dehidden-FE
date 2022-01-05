@@ -1,6 +1,5 @@
 import React from "react";
-import logo from '../static/media/logo.svg' //img import
-
+import logo from '../../static/media/logo.svg' //img import
 
 //handleCopy Mehtod
 const handleCopy = (e, link) => {
@@ -21,7 +20,7 @@ const handleCopy = (e, link) => {
     }
   };
 
-function MicroSiteNav({plyr}) {
+function MicroSiteNav({ nft }) {
   return (
     <div>
       <div className="microsite_nav">
@@ -32,12 +31,12 @@ function MicroSiteNav({plyr}) {
       <div className="right_nav">
         <div className="linkbar">
           <div className="linkbar_text">
-          <span>https://verify.dehidden.com/rcb/</span>
+            {nft.url}
           </div>
           <button className="button primary" onClick={(e) =>
               handleCopy(
                 e,
-                `https://verify.dehidden.com/rcb/${plyr.plyr_name_id}`
+                `${nft.url}`
               )
             }>
           <i className="fa fa-copy"></i>
@@ -45,10 +44,10 @@ function MicroSiteNav({plyr}) {
           </button>
         </div>
         <div
-          className="mobile_copy primary"
+          className="mobile_copy"
           onClick={(e) =>
-            handleCopy(e, `https://verify.dehidden.com/rcb/${plyr.plyr_name_id}`)
-          }> <i className="fa fa-copy"></i> </div>
+            handleCopy(e, `${nft.url}`)
+          }> <i className="fas fa-copy"></i> </div>
         <div className="copytext_mobile">Copied to Clipboard!</div>
       </div>
     </div>
