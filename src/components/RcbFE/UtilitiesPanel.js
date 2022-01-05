@@ -25,7 +25,7 @@ function RenderUtilityItem({data}){
      )
    }else{
     return(
-        <a href={data.url} key={data.id} target="_blank" rel='noopener' rel="noreferrer">
+        <a href={data.url} key={data.id}  rel='noopener' rel="noreferrer">
         <div className="rcb_utility">
           <div className="rcb_utility_icon">
             <img src={data.img_src} alt="" />
